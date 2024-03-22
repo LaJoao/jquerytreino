@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <form action="">
+            <input type="text" placeholder="Insira seu nome" id="nome">
+            <input type="number" placeholder="Digite sua idade" id="idade">
+            <button type="button" id="btn-enviar">Enviar</button>
+        </form>
+
+    </div>
+
+    <script>
+        
+        $(document).ready(function(){
+
+            
+            $("#btn-enviar").click(function(){
+                
+                let nome = $("#nome").val();
+                let idade = $("#idade").val();
+
+                console.log("Nome: "+nome);
+                console.log("Idade: "+idade)
+
+
+            })
+
+
+        });
+
+
+    </script>
+</body>
+</html>
